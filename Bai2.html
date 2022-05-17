@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 9, 10];
+    let a = +prompt("Nhập số muốn hiển thị: ");
+    let num = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === a) {
+            num += 1
+        }
+    }
+    if (num) {
+        document.write("a có phần thử thuộc n là: " + num)
+    } else {
+        document.write("a không có phần tử thuộc n")
+    }
+
+
+</script>
+</body>
+</html>
