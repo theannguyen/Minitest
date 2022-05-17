@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<p onclick="isPrime()"></p>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let sum = 0;
+
+    function isPrime() {
+
+        for (let i = 0; i < arr.length; i++) {
+            let boolean = false
+            if (arr[i] < 2) {
+                boolean = true
+            }
+            for (let j = 2; j <= Math.sqrt(arr[i]); j++) {
+
+                if (arr[i] % j === 0) {
+                    boolean = true
+                    break
+                }
+            }
+            if (!boolean) {
+                console.log(arr[i])
+                sum = sum + arr[i]
+            }
+        }
+    }
+
+    isPrime()
+    alert(sum)
+
+
+</script>
+</body>
+</html>
